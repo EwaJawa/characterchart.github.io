@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Interface</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f1115;
+      color: #e4e4e4;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #4f8cff, transparent);
+      filter: blur(1px);
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .skill {
+      margin-bottom: 10px;
+    }
+
+    .bar {
+      height: 6px;
+      background: #222;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      background: #4f8cff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      padding: 15px;
+      background: #161a22;
+      border-radius: 10px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="avatar"></div>
+    <div>
+      <h1>Observer / Interpreter</h1>
+      <p>Analizuję ludzi, rozmowy i idee. Tworzę struktury z chaosu.</p>
+    </div>
+  </div>
+
+  <!-- CORE SKILLS -->
+  <div class="section">
+    <h2>Core System</h2>
+
+    <div class="skill">Perception
+      <div class="bar"><div class="fill" style="width: 80%"></div></div>
+    </div>
+
+    <div class="skill">Questioning
+      <div class="bar"><div class="fill" style="width: 90%"></div></div>
+    </div>
+
+    <div class="skill">Analysis
+      <div class="bar"><div class="fill" style="width: 75%"></div></div>
+    </div>
+
+    <div class="skill">Expression
+      <div class="bar"><div class="fill" style="width: 40%"></div></div>
+    </div>
+
+    <div class="skill">Decision
+      <div class="bar"><div class="fill" style="width: 35%"></div></div>
+    </div>
+  </div>
+
+  <!-- AI INTERFACE -->
+  <div class="section">
+    <h2>AI Interface</h2>
+    <ul>
+      <li>Generowanie alternatywnych perspektyw</li>
+      <li>Analiza rozmów</li>
+      <li>Strukturyzowanie myśli</li>
+      <li>Rozwijanie idei</li>
+    </ul>
+  </div>
+
+  <!-- SKILL TREE -->
+  <div class="section grid">
+    <div class="card">
+      <h3>Thinking</h3>
+      <ul>
+        <li>Critical thinking</li>
+        <li>Pattern recognition</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Communication</h3>
+      <ul>
+        <li>Deep listening</li>
+        <li>Asking questions</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Creation</h3>
+      <ul>
+        <li>Writing (in progress)</li>
+        <li>Idea synthesis</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- QUESTS -->
+  <div class="section">
+    <h2>Active Quests</h2>
+    <ul>
+      <li>Rozwój ekspresji</li>
+      <li>Regulacja stanów</li>
+      <li>System pracy z myślami</li>
+    </ul>
+  </div>
+
+  <!-- OUTPUT -->
+  <div class="section">
+    <h2>Output</h2>
+    <ul>
+      <li>Notes / observations (in progress)</li>
+      <li>Texts (in progress)</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
